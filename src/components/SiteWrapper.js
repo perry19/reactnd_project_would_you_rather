@@ -155,5 +155,4 @@ function mapStateToProps({ authedUser, users }) {
     users: users
   };
 }
-
 export default withRouter(connect(mapStateToProps)(SiteWrapper));

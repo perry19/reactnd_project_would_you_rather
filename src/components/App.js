@@ -12,12 +12,13 @@ import Login from "./Login";
 import NoMatch from "./NoMatch";
 
 let loggedIn = false;
-const PrivateRoute = ({ component: Component, ...rest }) => (
-  <Route
-    {...rest}
-    render={props => (loggedIn === true ? <Component {...props} /> : <Login />)}
-  />
-);
+const PrivateRoute = function ({ component: Component, ...rest }) {
+  return (
+    <Route
+      {...rest}
+      render={props => (loggedIn === true ? <Component {...props} /> : <Login />)} />
+  );
+};
 
 class App extends Component {
   componentDidMount() {
