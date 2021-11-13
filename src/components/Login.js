@@ -3,7 +3,7 @@ import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { setAuthedUser } from "../actions/authedUser";
 import { Grid, Form, Button, Text, Page } from "tabler-react";
-import logo from "../assets/logo.svg";
+import logo from "../../public/logo512.png";
 
 class Login extends Component {
   state = {

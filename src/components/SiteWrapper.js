@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { NavLink, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { setAuthedUser } from "../actions/authedUser";
-import logo from "../assets/logo.svg";
+import logo from "../../public/logo512.png";
 
 import { Site, Nav, Grid, List, Button } from "tabler-react";
 
